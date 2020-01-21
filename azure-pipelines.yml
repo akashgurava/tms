@@ -1,0 +1,33 @@
+# Node.js with Vue
+# Build a Node.js project that uses Vue.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UseNode@1
+  displayName: Install Node JS
+  inputs:
+    version: '13.x'
+    checkLatest: true
+
+- task: CmdLine@2
+  displayName: Install yarn Packages
+  inputs:
+    script: 'yarn install'
+
+
+- task: CmdLine@2
+  displayName: Lint Package
+  inputs:
+    script: 'yarn lint'
+
+- task: CmdLine@2
+  displayName: Generate static files from nuxt
+  inputs:
+    script: 'yarn generate'
