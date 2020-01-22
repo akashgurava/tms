@@ -36,6 +36,7 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxt/typescript-build',
+    '@nuxtjs/tailwindcss',
   ],
   /*
    ** Nuxt.js modules
@@ -50,6 +51,11 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  tailwindcss: {
+    configPath: '~/tailwind.config.js',
+    cssPath: '~/assets/styles/tailwind.css',
+    purgeCSSInDev: false,
+  },
   /*
    ** Build configuration
    */

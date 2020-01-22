@@ -10,5 +10,6 @@
     "source.fixAll.eslint": true,
     "source.organizeImports": true
   },
-  "prettier.vueIndentScriptAndStyle": true
+  "prettier.vueIndentScriptAndStyle": true,
+  "scss.validate": false
 }

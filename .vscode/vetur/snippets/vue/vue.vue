@@ -8,7 +8,7 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
 @Component
-export default class Comp extends Vue {
+export default class $TM_FILENAME_BASE extends Vue {
   // Props
   @Prop({ type: String, required: true }) readonly ${1}!: string;
 

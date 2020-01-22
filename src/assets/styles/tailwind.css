@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.fullscreen {
+  @apply w-full min-h-screen;
+}
+
+.center-inner {
+  @apply justify-center items-center;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-column {
+  @apply flex flex-col;
+}
